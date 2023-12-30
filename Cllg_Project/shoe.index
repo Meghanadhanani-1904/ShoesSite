@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoes Site</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-logo">
+      <h1>Shoe<span>s</span></h1>
+    </div>
+    <div class="nav-items">
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="nav-icons">
+      <ul>
+        <li><i class="fa-solid fa-cart-shopping"></i></li>
+        <li><i class="fa-solid fa-user"></i></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="section">
+    <div class="heroSec1">
+      <h1><span>Run </span>Fast</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur molestias qui maxime quidem eum cum.</p>
+      <button>Shop now</button>
+    </div>
+    <div class="heroSec2">
+      <img src="s1.png" alt="">
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav {
+  background-color: #d7d7db;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  color: #393a3a;
+  padding-top: 20px;
+  justify-content: space-around;
+}
+.nav-logo {
+  width: 20%;
+  padding-left: 90px;
+}
+.nav-logo h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(37, 37, 37);
+  /* letter-spacing: 3px; */
+}
+.nav-logo h1 span {
+  color: #e63946;
+  text-decoration: underline;
+}
+.nav-items {
+  font-weight: 600;
+  width: 60%;
+  padding: 0 90px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+li {
+  text-decoration: none;
+  font-size: 20px;
+  list-style: none;
+}
+.nav-logo img {
+  width: 50%;
+  height: 100%;
+}
+.nav-icons {
+  width: 20%;
+  padding: 0 60px;
+}
+.section {
+  height: 90vh;
+  background-color: #d7d7db;
+  display: flex;
+}
+.heroSec1 {
+  width: 50%;
+  height: 100%;
+  padding: 60px;
+}
+.heroSec2 {
+  width: 50%;
+  height: 100%;
+  border-radius:0 500px;
+  border-bottom: 5px solid #e63946;
+}
+.heroSec2 img {
+  width: 100%;
+  height: 100%;
+}
+.heroSec1 h1 {
+  font-size: 70px;
+  color: #a7a7ae;
+}
+.heroSec1 h1 span {
+  color: #085680;
+}
+.heroSec1 p {
+  font-size: 20px;
+  color: #121212;
+  padding: 40px 0;
+}
+.heroSec1 button {
+  padding: 20px;
+  color: #fff;
+  font-size: 25px;
+  width: 30%;
+  text-align: center;
+  background-color: #e63946;
+  border: none;
+  border-radius: 20px;
+}

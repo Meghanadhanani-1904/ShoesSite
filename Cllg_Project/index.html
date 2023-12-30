@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- bootstrap -->
+ 
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <h1>Shoe<span>s</span></h1>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#footer">About</a></li>
+                <li><a href="#email">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="nav-icons">
+            <ul>
+                <li><i class="fa-solid fa-cart-shopping"></i><span id="display"></span></li>
+                <li> <a href="#email"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hero Section -->
+
+    <div class="section" id="home">
+        <div class="heroSec1">
+            <h1>Run <span>Fast</span></h1>
+            <p>Luxury meets ultimate Sitting Comfort...!!!</p>
+            <button class="btn"><a href="#shop">Shop now</a></button>
+            <div class="addSec">
+                <div class="div1">
+                    <div class="d1">
+                        <img src="shoes1.png" alt="">
+                    </div>
+                    <h1>$121</h1>
+                    <button class="addBtn" onclick="add()">+</button>
+                </div>
+                <div class="div1">
+                    <div class="d1">
+                        <img src="shoes3.png" alt="">
+                    </div>
+                    <h1>$323</h1>
+                    <button class="addBtn" onclick="add()">+</button>
+                </div>
+                <div class="div1">
+                    <div class="d1">
+                        <img src="shoes7.png" alt="">
+                    </div>
+                    <h1>$233</h1>
+                    <button  id="btn" onclick="add()" class="addBtn increase">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="heroSec2">
+            <img src="s1.png" alt="">
+        </div>
+    </div>
+    <div class="shop" id="shop">
+        <div class="part1">
+            <div class="p1">
+                <div class="card">
+                    <img class="card-img-top" src="shoes3.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Comet-X Lows</h4>
+                        <p class="card-text">$699</p>
+
+                            <button onclick="add()" class="btn btn-secondary increase">Add Cart</button>
+                        </div>
+                </div>
+            </div>
+            <div class="p1">
+                <div class="card">
+                    <img class="card-img-top" src="shoes4.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Ludic-Eclipse</h4>
+                        <p class="card-text">$499</p>
+
+                            <button  onclick="add()" class="btn btn-secondary increase">Add Cart</button>
+                        </div>
+                </div>
+            </div>
+            <div class="p1">
+                <div class="card">
+                    <img class="card-img-top" src="shoes7.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Naruto: Spilt</h4>
+                        <p class="card-text">$299</p>
+
+                            <button onclick="add()" class="btn btn-secondary increase">Add Cart</button>
+                        </div>
+                </div>
+            </div>
+            <div class="p1">
+                <div class="card">
+                    <img class="card-img-top" src="shoes8.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Tiramisu Lows</h4>
+                        <p class="card-text">$599</p>
+
+                            <button onclick="add()" class="btn btn-secondary increase">Add Cart</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="part1">
+            <div class="p1">
+                <div class="card">
+                    <img class="card-img-top" src="shoes8.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Comet-X Lows</h4>
+                        <p class="card-text">$699</p>
+
+                            <button onclick="add()" class="btn btn-secondary increase">Add Cart</button>
+                        </div>
+                </div>
+            </div>
+            <div class="p1">
+                <div class="card">
+                    <img class="card-img-top" src="shoes3.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Ludic-Eclipse</h4>
+                        <p class="card-text">$499</p>
+
+                            <button onclick="add()" class="btn btn-secondary increase">Add Cart</button>
+                        </div>
+                </div>
+            </div>
+            <div class="p1">
+                <div class="card">
+                    <img class="card-img-top" src="shoes4.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Naruto: Spilt</h4>
+                        <p class="card-text">$299</p>
+
+                            <button onclick="add()" class="btn btn-secondary increase">Add Cart</button>
+                        </div>
+                </div>
+            </div>
+            <div class="p1">
+                <div class="card">
+                    <img class="card-img-top" src="shoes1.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Tiramisu Lows</h4>
+                        <p class="card-text">$599</p>
+
+                            <button onclick="add()" class="btn btn-secondary increase">Add Cart</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email -->
+
+    <div class="emailSec" id="email">
+        <h1>Contact Us</h1>
+        <form name="fn">
+<label>Email : </label><br>
+<input type="email" name="email">
+<p id="emailDis"></p><br>
+<label>Mobile number : </label><br>
+<input type="number" name="mobile">
+<p id="mobileDis"></p><br>
+<label>Address : </label><br>
+<!-- <input type="Address" name="address"><br><br> -->
+<textarea name="address"></textarea>
+<p id="addressDis"></p><br>
+<div class="button">
+    <button class="loginBtn" type="button" onclick="validate()">Submit</button>
+
+</div>
+        </form>
+    </div>
+    <!-- footer -->
+
+    <footer>
+        <div class="footer1" id="footer">
+            <div class="nav-logo">
+                <h1 class="f1">Shoe<span>s</span></h1>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="nav-icons f3">
+                <ul class="f2">
+                    <li> <i class="fa-brands fa-instagram"></i></li>
+                    <li> <i class="fa-brands fa-linkedin"></i></li>
+                    <li> <i class="fa-brands fa-x-twitter"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
